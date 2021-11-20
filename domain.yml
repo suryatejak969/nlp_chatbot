@@ -1,0 +1,62 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - corona_intro
+  - corona_prevention
+  - corona_variants
+  - corona_vaccine
+  - corona_spread
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_corona_intro:
+  - text: "Coronaviruses are a type of virus. 
+           There are many different kinds, and some cause disease. 
+           A coronavirus identified in 2019, SARS-CoV-2, has caused a pandemic of respiratory illness, called COVID-19."
+  
+  utter_corona_spread:
+  - text: "The virus can spread from an infected person’s mouth or nose in small liquid particles when they cough, 
+           sneeze, speak, sing or breathe. These particles range from larger respiratory droplets to smaller aerosols."
+  
+  utter_corona_vaccine:
+  - text: "Equitable access to safe and efficetive vaccines is critical to ending the COVID-19 pandemice
+           so it is hugely encouraging to see so many vaccine proving and going to development.
+           WHO is working tirelessly with partners to develop, manufacture and deploy safe and effective vaccines."
+  
+  utter_corona_variants:
+  - text: "All viruses, including SARS-CoV-2, the virus that causes COVID-19, change over time. 
+           Most changes have little to no impact on the virus’ properties. However, some changes may affect the virus’s properties, 
+           such as how easily it spreads, the associated disease severity, or the performance of vaccines, 
+           therapeutic medicines, diagnostic tools, or other public health and social measures. "
+
+  utter_corona_prevention:
+  - text: "weare mask, maintain distance"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
